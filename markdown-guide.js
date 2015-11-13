@@ -1,4 +1,4 @@
-// (function(window, document, undefined){
+(function(window, document, undefined){
   'use strict';
 
   // Helper functions
@@ -146,5 +146,4 @@
     }
   };
 
-// })(this, document);
-
+})(this, document);
