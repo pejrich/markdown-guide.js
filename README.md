@@ -34,9 +34,6 @@ MarkdownGuide({selector: '#md_guide',
 | ```triggerFunction``` | ```defaultTriggerFunction``` see source for detauls | define your own function when the trigger is clicked ```function(e, guide)``` Event (```e```) and the Guide (```guide```) are passed as arguements. The guide is a table. JS class is HTMLElement. |
 | ```tdPadding``` | 10px | padding around cells |
 | ```tdBorder``` | 1px solid black | border of cells |
-| ```buttonText``` | Markdown Guide | Text on button/trigger |
-| ```buttonText``` | Markdown Guide | Text on button/trigger |
-| ```buttonText``` | Markdown Guide | Text on button/trigger |
 |```headings``` | true | show/hide row |
 |```italics``` | true | show/hide row |
 |```bold``` | true | show/hide row |
