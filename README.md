@@ -19,7 +19,7 @@ In your JS, initialize the class with options:
 MarkdownGuide(); \\ Default options shown below
 
 MarkdownGuide({selector: '#md_guide',
-        headings: false,
+                headings: false,
                 buttonText: "Formatting Help"});
 ```
 
