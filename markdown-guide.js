@@ -83,20 +83,22 @@
     });
   }
 
-  function defaultTriggerFunction(e) {
+  function defaultTriggerFunction(e, guide) {
     window.test = e.target
     if (e.target.hasClass('active')) {
       e.target.removeClass('active');
       e.target.nextElementSibling.remove();
     } else {
-      e.target.parentElement.appendChild(generateGuide().cloneNode(true))
+      e.target.parentElement.appendChild(guide)
       e.target.addClass('active');
     }
   }
 
   function addListeners() {
     var triggers = document.querySelectorAll("." + BUTTON_CLASS);
-    [].forEach.call(triggers,function(e){e.addEventListener('click', settings.triggerFunction, false)})
+    [].forEach.call(triggers,function(e){e.addEventListener('click', function(e) {
+      settings.triggerFunction(e, generateGuide().cloneNode(true));
+    }, false)})
   }
 
   function generateGuide() {
