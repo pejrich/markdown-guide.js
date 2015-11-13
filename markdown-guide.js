@@ -1,4 +1,4 @@
-(function(window, document, undefined){
+// (function(window, document, undefined){
   'use strict';
 
   // Helper functions
@@ -42,7 +42,7 @@
   };
 
 
-  var GUIDE;
+  var GUIDE; // Used to cache guide
   var BUTTON_CLASS = "markdown_guide_button";
   var TABLE_DATA = {
     headings: {t: "#H1 Heading <br><br> . . . <br><br> #######H6 Heading", s: "<h1>H1 Heading</h1> . . . <h6>H6 Heading</h6>"},
@@ -64,7 +64,13 @@
   function clickElement () {
     var clickItem = document.createElement(settings.buttonType);
     clickItem.className = settings.buttonClass + " " + BUTTON_CLASS;
-    clickItem.innerText = settings.buttonText;
+
+    // Added Firefox support
+    if (typeof clickItem.textContent !== "undefined") {
+        clickItem.textContent = settings.buttonText;
+    } else {
+        clickItem.innerText = settings.buttonText;
+    }
     return clickItem;
   }
 
@@ -140,5 +146,5 @@
     }
   };
 
-})(this, document);
+// })(this, document);
 
