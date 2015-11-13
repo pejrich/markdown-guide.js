@@ -38,6 +38,7 @@ $('.markdown_guide').markdownGuide({buttonText: "Here"})
 | ```buttonText``` | Markdown Guide | Text on button/trigger |
 | ```buttonClass``` | none | String to add classes or IDs to trigger element |
 | ```triggerFunction``` | ```defaultTriggerFunction``` see source for detauls | define your own function when the trigger is clicked ```function(e, guide)``` Event (```e```) and the Guide (```guide```) are passed as arguments. The guide is a table. JS class is HTMLElement. |
+| ```tableStyle``` | border:1px solid black;margin:0 auto; | table inline style |
 | ```tdPadding``` | 10px | padding around cells |
 | ```tdBorder``` | 1px solid black | border of cells |
 |```headings``` | true | show/hide row |

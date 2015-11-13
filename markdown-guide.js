@@ -24,6 +24,7 @@
     buttonText: 'Markdown Guide',
     buttonClass: '',
     triggerFunction: defaultTriggerFunction,
+    tableStyle: ';border:1px solid black;margin:0 auto;',
     tdPadding: '10px',
     tdBorder: '1px solid black',
       headings: true,
@@ -102,7 +103,7 @@
   function generateGuide() {
     if (!GUIDE) {
       var table  = document.createElement('table');
-      table.style.border = '1px solid black';
+      table.setAttribute('style', settings.tableStyle);
 
       for (var k in TABLE_DATA){
         if (TABLE_DATA.hasOwnProperty(k)) {
