@@ -23,6 +23,12 @@ MarkdownGuide({selector: '#md_guide',
                 buttonText: "Formatting Help"});
 ```
 
+Can also be called as a jQuery function:
+
+```
+$('.markdown_guide').markdownGuide({buttonText: "Here"})
+```
+
 ## Options
 
 | Name        | Default           | Description  |
