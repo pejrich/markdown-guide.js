@@ -2,18 +2,18 @@
   'use strict';
 
   // Helper functions
-  Object.prototype.hasClass = function (klass) {
-    return (' ' + this.className + ' ').indexOf(' ' + klass + ' ') > -1;
+  function hasClass(elem, klass) {
+    return (' ' + elem.className + ' ').indexOf(' ' + klass + ' ') > -1;
   }
 
-  Object.prototype.addClass = function(klass) {
-    if (!this.hasClass(klass))
-    this.className = this.className + " " + klass
+  function addClass(elem, klass) {
+    if (!hasClass(elem, klass))
+    elem.className = elem.className + " " + klass
   }
 
-  Object.prototype.removeClass = function(klass) {
-    if (this.hasClass(klass)) {
-      this.className = this.className.split(klass).join("").trim();
+  function removeClass(elem, klass) {
+    if (hasClass(elem, klass)) {
+      elem.className = elem.className.split(klass).join("").trim();
     }
   }
 
@@ -84,12 +84,12 @@
 
   function defaultTriggerFunction(e, guide) {
     window.test = e.target
-    if (e.target.hasClass('active')) {
-      e.target.removeClass('active');
+    if (hasClass(e.target, 'active')) {
+      removeClass(e.target, 'active');
       e.target.nextElementSibling.remove();
     } else {
       e.target.parentElement.appendChild(guide)
-      e.target.addClass('active');
+      addClass(e.target, 'active');
     }
   }
 
