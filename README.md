@@ -10,7 +10,7 @@ Default: ```.markdown_guide```
 <div class="markdown_guide"></div>
 
 
-<div id="markdown_guide"></div>
+<div id="md_guide"></div>
 ```
 
 In your JS, initialize the class with options:
@@ -18,6 +18,35 @@ In your JS, initialize the class with options:
 ```
 MarkdownGuide(); \\ Default options shown below
 
-MarkdownGuide({selector: '#markdown_guide', headings: false, buttonText: "Formatting Help"});
+MarkdownGuide({selector: '#md_guide',
+        headings: false,
+                buttonText: "Formatting Help"});
 ```
 
+## Options
+
+| Name        | Default           | Description  |
+| ------------- |:-------------:| -----:|
+| ```selector``` | .markdown_guide | Class or ID |
+| ```buttonType``` | button | Type of element added to DOM as the guide trigger. |
+| ```buttonText``` | Markdown Guide | Text on button/trigger |
+| ```buttonClass``` | none | String to add classes or IDs to trigger element |
+| ```triggerFunction``` | ```defaultTriggerFunction``` see source for detauls | define your own function when the trigger is clicked ```function(e, guide)``` Event (```e```) and the Guide (```guide```) are passed as arguements. The guide is a table. JS class is HTMLElement. |
+| ```tdPadding``` | 10px | padding around cells |
+| ```tdBorder``` | 1px solid black | border of cells |
+| ```buttonText``` | Markdown Guide | Text on button/trigger |
+| ```buttonText``` | Markdown Guide | Text on button/trigger |
+| ```buttonText``` | Markdown Guide | Text on button/trigger |
+|```headings``` | true | show/hide row |
+|```italics``` | true | show/hide row |
+|```bold``` | true | show/hide row |
+|```link``` | true | show/hide row |
+|```image``` | true | show/hide row |
+|```ul``` | true | show/hide row |
+|```ol``` | false | show/hide row |
+|```blockquote``` | true | show/hide row |
+|```hardrule``` | true | show/hide row |
+|```code_spaced``` | true | show/hide row |
+|```code_accent``` | true | show/hide row |
+|```strikethrough``` | true | show/hide row |
+|```superscript``` | tru | show/hide row |
