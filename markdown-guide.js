@@ -24,6 +24,7 @@
     buttonText: 'Markdown Guide',
     buttonClass: '',
     triggerFunction: defaultTriggerFunction,
+    tableClass: '',
     tableStyle: ';border:1px solid black;margin:0 auto;',
     tdPadding: '10px',
     tdBorder: '1px solid black',
@@ -41,7 +42,6 @@
       strikethrough: true,
       superscript: true
   };
-
 
   var GUIDE; // Used to cache guide
   var BUTTON_CLASS = "markdown_guide_button";
@@ -103,6 +103,7 @@
   function generateGuide() {
     if (!GUIDE) {
       var table  = document.createElement('table');
+      addClass(table, settings.tableClass);
       table.setAttribute('style', settings.tableStyle);
 
       for (var k in TABLE_DATA){
