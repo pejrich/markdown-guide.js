@@ -1,6 +1,7 @@
 # markdown-guide.js
 Add a Markdown syntax guide to your website via Javascript
-[Demo](http://perich.github.io/markdown-guide.html)
+
+#### [Demo](http://perich.github.io/markdown-guide.html)
 
 ## How it works:
 
