@@ -31,7 +31,7 @@ MarkdownGuide({selector: '#md_guide',
 | ```buttonType``` | button | Type of element added to DOM as the guide trigger. |
 | ```buttonText``` | Markdown Guide | Text on button/trigger |
 | ```buttonClass``` | none | String to add classes or IDs to trigger element |
-| ```triggerFunction``` | ```defaultTriggerFunction``` see source for detauls | define your own function when the trigger is clicked ```function(e, guide)``` Event (```e```) and the Guide (```guide```) are passed as arguements. The guide is a table. JS class is HTMLElement. |
+| ```triggerFunction``` | ```defaultTriggerFunction``` see source for detauls | define your own function when the trigger is clicked ```function(e, guide)``` Event (```e```) and the Guide (```guide```) are passed as arguments. The guide is a table. JS class is HTMLElement. |
 | ```tdPadding``` | 10px | padding around cells |
 | ```tdBorder``` | 1px solid black | border of cells |
 |```headings``` | true | show/hide row |
@@ -46,4 +46,4 @@ MarkdownGuide({selector: '#md_guide',
 |```code_spaced``` | true | show/hide row |
 |```code_accent``` | true | show/hide row |
 |```strikethrough``` | true | show/hide row |
-|```superscript``` | tru | show/hide row |
+|```superscript``` | true | show/hide row |
