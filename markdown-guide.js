@@ -2,14 +2,6 @@
   'use strict';
 
   // Helper functions
-  Object.prototype.fetch = function(val, def) {
-    if (val in this) {
-        return this[val];
-    } else {
-        return def;
-    }
-  }
-
   Object.prototype.hasClass = function (klass) {
     return (' ' + this.className + ' ').indexOf(' ' + klass + ' ') > -1;
   }
