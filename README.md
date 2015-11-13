@@ -53,3 +53,7 @@ $('.markdown_guide').markdownGuide({buttonText: "Here"})
 |```code_accent``` | true | show/hide row |
 |```strikethrough``` | true | show/hide row |
 |```superscript``` | true | show/hide row |
+
+### License
+
+[MIT License](http://www.opensource.org/licenses/mit-license.php)
