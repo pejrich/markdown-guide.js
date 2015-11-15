@@ -96,6 +96,7 @@
   function addListeners() {
     var triggers = document.querySelectorAll("." + BUTTON_CLASS);
     [].forEach.call(triggers,function(e){e.addEventListener('click', function(e) {
+      e.preventDefault();
       settings.triggerFunction(e, generateGuide().cloneNode(true));
     }, false)})
   }
