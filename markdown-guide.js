@@ -83,7 +83,6 @@
   }
 
   function defaultTriggerFunction(e, guide) {
-    window.test = e.target
     if (hasClass(e.target, 'active')) {
       removeClass(e.target, 'active');
       e.target.nextElementSibling.remove();
